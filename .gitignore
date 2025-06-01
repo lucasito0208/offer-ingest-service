@@ -1,0 +1,37 @@
+# Java
+/target/
+/*.iml
+/.idea/
+*.log
+
+# IntelliJ / VSCode
+.vscode/
+*.class
+
+# OS
+.DS_Store
+
+# Variables de entorno
+.env
+
+# Otros
+application-local.yml
+# Java
+/target/
+/*.iml
+/.idea/
+*.log
+
+# IntelliJ / VSCode
+.vscode/
+*.class
+
+# OS
+.DS_Store
+
+# Variables de entorno
+.env
+
+# Otros
+application-local.yml
+
