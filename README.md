@@ -3,7 +3,7 @@
 🎯 Microservicio del sistema **Cluster Offers System** encargado de consumir mensajes Kafka con datos de productos y guardarlos en Neo4j.
 
 ## ⚙️ Tecnologías
-- Java 17
+- Java 21
 - Spring Boot 3
 - Apache Kafka
 - Neo4j (vía Spring Data Neo4j)
