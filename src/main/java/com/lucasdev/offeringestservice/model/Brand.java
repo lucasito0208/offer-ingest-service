@@ -8,20 +8,20 @@ import org.springframework.data.neo4j.core.schema.Id;
 import org.springframework.data.neo4j.core.schema.Node;
 import org.springframework.data.neo4j.core.schema.Relationship;
 
-@Node("Product")
+import java.util.List;
+
+@Node("Brand")
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Product {
+public class Brand {
 
     @Id
-    private String productId;
-    private String productName;
-    private String category;
-    private double price;
-    private String promotion;
+    private String brandId;
 
-    @Relationship(type="OFFERS", direction=Relationship.Direction.INCOMING)
-    private Brand brand;
+    private String name;
+
+    @Relationship(type="OFFERS", direction = Relationship.Direction.OUTGOING)
+    private List<Product> products;
 }

@@ -2,6 +2,7 @@ spring:
   application:
     name: offer-ingest-service
 
+
   kafka:
     consumer:
       bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
@@ -9,6 +10,10 @@ spring:
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      topics:
+        products: productos-promociones-in
+        brands: brands-in
+
 
 
   neo4j:
@@ -20,5 +25,8 @@ logging:
   level:
     org.apache.kafka: WARN
     org.springframework.data.neo4j: DEBUG
+
+server:
+  port: 8080
 
 
